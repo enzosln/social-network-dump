@@ -1,0 +1,57 @@
+[
+  {
+    "path" : "connections/contacts/synced_contacts.json",
+    "description" : "List of all contacts imported into instagam for synchronization",
+    "firstKey" : "contacts_contact_info"
+  },
+  {
+    "path" : "connections/followers_and_following/blocked_profiles.json",
+    "description" : "List of blocked users",
+    "firstKey" : "relationships_blocked_users"
+  },
+  {
+    "path" : "connections/followers_and_following/close_friends.json",
+    "description" : "List of close friends",
+    "firstKey" : "relationships_close_friends"
+  },
+  {
+    "path" : "connections/followers_and_following/follow_requests_you've_received.json",
+    "description" : "Follow request pending received",
+    "firstKey" : "relationships_follow_requests_received"
+  },
+  {
+    "path" : "connections/followers_and_following/followers_1.json",
+    "description" : "List of followers",
+    "firstKey" : null
+  },
+  {
+    "path" : "connections/followers_and_following/following_hashtags.json",
+    "description" : "List of following hashtags ",
+    "firstKey" : "relationships_following_hashtags"
+  },
+  {
+    "path" : "connections/followers_and_following/following.json",
+    "description" : "List of following",
+    "firstKey" : "relationships_following"
+  },
+  {
+    "path" : "connections/followers_and_following/pending_follow_requests.json",
+    "description" : "List of following requests sent",
+    "firstKey" : "relationships_follow_requests_sent"
+  },
+  {
+    "path" : "connections/followers_and_following/recent_follow_requests.json",
+    "description" : "List of recent following requests sent",
+    "firstKey" : "relationships_permanent_follow_requests"
+  },
+  {
+    "path" : "connections/followers_and_following/recently_unfollowed_profiles.json",
+    "description" : "Recently unfollowed users",
+    "firstKey" : "relationships_unfollowed_users"
+  },
+  {
+    "path" : "connections/followers_and_following/removed_suggestions.json",
+    "description" : "Ignored users suggestions",
+    "firstKey" : "relationships_dismissed_suggested_users"
+  }
+]
