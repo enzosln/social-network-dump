@@ -2,15 +2,24 @@ import { faPenToSquare, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Messages from "../Messages";
+import Contact from "./Contact";
 
 export default function ContactBar() {
+  let date: Date = new Date();
+  date.setHours(date.getHours() - 3);
   return (
     <div className="absolute left-[9vh]">
       <section className="h-[100vh] w-[24.8rem] border flex flex-col">
         <UpperContactBar userName="username" />
         <div className="overflow-y-scroll grow">
           <ProfileContactBar />
-          <Messages />
+          <div>
+            <Contact username="username" lastConnected={new Date(date)} />
+            <Contact username="username" lastConnected={new Date(date)} />
+            <Contact username="username" lastConnected={new Date(date)} />
+            <Contact username="username" lastConnected={new Date(date)} />
+            <Contact username="username" lastConnected={new Date(date)} />
+          </div>
         </div>
       </section>
     </div>
@@ -33,7 +42,7 @@ function ProfileContactBar() {
     <div className="h-[140px] mb-[8px]">
       <div className="size-[100%] h-[96px] mt-[44px]">
         <div className=" rounded-full overflow-hidden mx-[1.35rem] size-[74px]  border">
-          <FontAwesomeIcon icon={faUser} className=" size-[74px] " />
+          <FontAwesomeIcon icon={faUser} className=" size-[4.625rem] " />
         </div>
       </div>
     </div>
