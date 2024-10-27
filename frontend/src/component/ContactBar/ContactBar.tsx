@@ -12,7 +12,17 @@ export default function ContactBar() {
       <section className="h-[100vh] w-[24.8rem] border flex flex-col">
         <UpperContactBar userName="username" />
         <div className="overflow-y-scroll grow">
-          <ProfileContactBar />
+          <div className="">
+            <ProfileContactBar />
+          </div>
+          <div className="px-6 pb-[10px] pt-[14px] flex">
+            <span className="inline-flex text-base font-bold w-[17rem] content-start">
+              Messages
+            </span>
+            <button className="text-sm font-semibold text-gray-500">
+              Demandes
+            </button>
+          </div>
           <div>
             <Contact username="username" lastConnected={new Date(date)} />
             <Contact username="username" lastConnected={new Date(date)} />
@@ -39,7 +49,7 @@ function UpperContactBar({ userName }: { userName: string }) {
 
 function ProfileContactBar() {
   return (
-    <div className="h-[140px] mb-[8px]">
+    <div className="h-[6.5rem]">
       <div className="size-[100%] h-[96px] mt-[44px]">
         <div className=" rounded-full overflow-hidden mx-[1.35rem] size-[74px]  border">
           <FontAwesomeIcon icon={faUser} className=" size-[4.625rem] " />
