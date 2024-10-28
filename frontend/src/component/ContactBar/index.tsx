@@ -1,1 +1,1 @@
-export { default } from "./ContactBar";
+export { default } from "./ContactBar.tsx";
